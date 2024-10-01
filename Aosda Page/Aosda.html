@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Aosda Civilization: An Ancient Legacy of Light and Shadow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Georgia', serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #F2E6D9;
+      }
+
+      body::before {
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);
+        background-image: url("parchment-texture.jpg");
+        background-repeat: repeat;
+        filter: blur(2px);
+        z-index: -1;
+      }
+
+      /* Title and Author Styling */
+      .title-section {
+        text-align: center;
+        margin-bottom: 40px;
+        /* Add space below the title section */
+      }
+
+      /* Footnote styling */
+      .footnotes {
+        font-size: 0.8em;
+        margin-top: 30px;
+        text-align: center;
+        /* Center the footnotes */
+      }
+
+      .footnotes p {
+        background: none;
+        /* Remove background from footnotes */
+        padding: 0;
+        margin-bottom: 5px;
+      }
+
+      .footnotes sup {
+        /* Style for superscript numbers */
+        vertical-align: super;
+        font-size: 0.7em;
+      }
+
+      h1 {
+        font-family: 'Cinzel Decorative', serif;
+        font-size: 3.5em;
+        /* Slightly larger title */
+        color: #5D2902;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        margin-bottom: 10px;
+        /* Reduce space between title and author */
+      }
+
+      .author {
+        font-family: 'Cinzel Decorative', serif;
+        font-size: 1.5em;
+        color: #8B4513;
+      }
+
+      h2 {
+        font-family: 'Cinzel Decorative', serif;
+        font-size: 2em;
+        color: #331A00;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        border-bottom: 2px solid #B8860B;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+      }
+
+      /* Style for text boxes */
+      .page p {
+        background-color: rgba(255, 255, 255, 0.7);
+        /* Semi-transparent white */
+        padding: 20px;
+        border-radius: 10px;
+        /* Rounded corners */
+        margin-bottom: 15px;
+        /* Add spacing between paragraphs */
+        position: relative;
+        /* To position the icon relative to the paragraph */
+      }
+
+      .play-icon {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 1.2em;
+        /* Adjust size as needed */
+        cursor: pointer;
+        /* Indicate it's clickable */
+      }
+
+      .play-icon:hover {
+        color: #B8860B;
+        /* Change color on hover (optional) */
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        position: relative;
+      }
+
+      img::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("film-grain.png");
+        opacity: 0.2;
+        mix-blend-mode: overlay;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title-section">
+      <h1>The Aosda Civilization: An Ancient Legacy of Light and Shadow</h1>
+      <p class="author">By Zhong Fou</p>
+    </div>
+    <div class="flipbook">
+      <div class="page">
+        <h2>A Beacon of Enlightenment and Darkness</h2>
+        <img src="aosda_large.jpg" alt="Image of a majestic Aosda city">
+        <p id="paragraph1">
+          <span class="play-icon">&#9658;</span> The Aosda civilization, flourishing an estimated 16,000 to 18,000 years ago, was renowned for its mastery of magic and technology. Their sprawling cities, built of gold and other precious metals, floated majestically in the sky, powered by advanced energy crystals. The Aosdans delved deep into the metaphysical arts, harnessing the power of the elements and pushing the boundaries of knowledge. Their scholars and mages tirelessly sought to unravel the secrets of the universe, making significant strides in various fields of study.
+        </p>
+        <audio id="audio1" src="audio1.mp3"></audio>
+      </div>
+      <div class="page">
+        <h2>The Dark Side of Progress</h2>
+        <img src="aosda_mining.jpg" alt="Image of an Aosda mine">
+        <p id="paragraph2">
+          <span class="play-icon">&#9658;</span> However, beneath this veneer of progress and enlightenment lurked a darker side to the Aosda civilization. While the elite enjoyed lives of luxury and intellectual pursuits in their floating cities, a vast underclass of enslaved races toiled in harsh conditions to maintain the Aosdans' opulent lifestyle. Mountain people, kobolds, and even other humans were subjected to mind control and forced labor, their very souls harnessed to power the energy crystals that sustained the floating cities. This exploitation and disregard for the well-being of others ultimately sowed the seeds of the Aosdans' downfall.
+        </p>
+        <audio id="audio2" src="audio2.mp3"></audio>
+      </div>
+      <div class="page">
+        <h2>The Fall of Aosda</h2>
+        <img src="aosda_ruins.jpg" alt="Image of a ruined Aosda city">
+        <p id="paragraph3">
+          <span class="play-icon">&#9658;</span> The Aosdans' insatiable thirst for knowledge and power led them down a treacherous path. Their relentless experimentation with magic and their attempts to control the forces of nature eventually led to a catastrophic event. In their hubris, they opened a portal to Kadath, a realm of unspeakable darkness and chaos, unleashing a torrent of evil upon the world. The Aosdans' arrogance and their disregard for the natural order of things had dire consequences, as the unleashed darkness consumed their civilization, leaving behind only ruins and remnants of their once-great empire.
+        </p>
+        <audio id="audio3" src="audio3.mp3"></audio>
+      </div>
+      <div class="page">
+        <h2>A Cautionary Tale for Future Generations</h2>
+        <img src="aosda_library.jpg" alt="Image of Aosda scholars">
+        <p id="paragraph4">
+          <span class="play-icon">&#9658;</span> The fall of Aosda serves as a cautionary tale, a reminder of the dangers of unchecked ambition and the consequences of exploiting others for personal gain. It highlights the importance of balance and respect for the natural order of things. The Aosdans' legacy is a complex one, a blend of remarkable achievements and tragic failures. Their story serves as a valuable lesson for future generations, urging them to learn from the mistakes of the past and to strive for a more harmonious and equitable society.
+        </p>
+        <audio id="audio4" src="audio4.mp3"></audio>
+      </div>
+    </div>
+    <div class="footnotes">
+	<p>Reference Material:</p>
+    <p>
+			Shadows of Aosda
+    </p>
+    <p>
+			Shadows of Hy-brasyl
+    </p>
+	<p>
+			The Evolution of the Modern Temuairan Warrior (Part I: Swords and Armor)
+    </p>
+	<p>
+			Seanchas Temuair, Vol. 1
+	</p>
+    </div>
+	</body>
+  <script>
+const playIcons = document.querySelectorAll('.play-icon');
+
+playIcons.forEach((icon, index) => {
+  icon.addEventListener('click', () => {
+    const audioId = `audio${index + 1}`;
+    const audio = document.getElementById(audioId);
+
+    if (audio.paused) {
+      audio.play();
+      icon.innerHTML = '&#9209;'; // Square for stop
+    } else {
+      audio.pause();
+      audio.currentTime = 0; // Reset to the beginning
+      icon.innerHTML = '&#9658;'; // Triangle for play
+    }
+  });
+});
+  </script>
+	</html>

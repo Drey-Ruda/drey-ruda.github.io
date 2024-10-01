@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Aislings: Harbingers of Hope</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+<style>
+body {
+font-family: 'Georgia', serif;
+line-height: 1.6;
+max-width: 800px;
+margin: 0 auto;
+background-color: #F2E6D9;
+}
+
+  body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background-image: url("parchment-texture.jpg");
+    background-repeat: repeat;
+    filter: blur(2px);
+    z-index: -1;
+  }
+
+  /* Title and Author Styling */
+  .title-section {
+    text-align: center;
+    margin-bottom: 40px;
+    /* Add space below the title section */
+  }
+
+  /* Footnote styling */
+  .footnotes {
+    font-size: 0.8em;
+    margin-top: 30px;
+    text-align: center;
+    /* Center the footnotes */
+  }
+
+  .footnotes p {
+    background: none;
+    /* Remove background from footnotes */
+    padding: 0;
+    margin-bottom: 5px;
+  }
+
+  .footnotes sup {
+    /* Style for superscript numbers */
+    vertical-align: super;
+    font-size: 0.7em;
+  }
+
+  h1 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 3.5em;
+    /* Slightly larger title */
+    color: #5D2902;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px;
+    /* Reduce space between title and author */
+  }
+
+  .author {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.5em;
+    color: #8B4513;
+  }
+
+  h2 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2em;
+    color: #331A00;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #B8860B;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+
+  /* Style for text boxes */
+  .page p {
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 10px;
+    /* Rounded corners */
+    margin-bottom: 15px;
+    /* Add spacing between paragraphs */
+    position: relative;
+    /* To position the icon relative to the paragraph */
+  }
+
+  .play-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.2em;
+    /* Adjust size as needed */
+    cursor: pointer;
+    /* Indicate it's clickable */
+  }
+
+  .play-icon:hover {
+    color: #B8860B;
+    /* Change color on hover (optional) */
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+  }
+
+  img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("film-grain.png");
+    opacity: 0.2;
+    mix-blend-mode: overlay;
+  }
+</style>
+</head>
+<body>
+<div class="title-section">
+<h1>The Aislings: Harbingers of Hope</h1>
+<p class="author">By Zhong Fou</p>
+</div>
+
+<div class="flipbook">
+<div class="page">
+<h2>The Rise of the Aislings</h2>
+<img src="aisling_hope.jpg" alt="Image of an Aisling, a radiant figure with ethereal wings">
+<p id="paragraph1">
+<span class="play-icon">&#9658;</span> In the wake of Danaan's sacrifice and the slumber that followed, a new era dawned in Temuair. From the depths of despair and chaos, the Aislings emerged, radiant beings of light and hope. They were not gods, but mortals touched by the divine, their souls imbued with the essence of Danaan herself. They possessed a profound understanding of the world and its people, their wisdom and compassion guiding them towards a brighter future.
+</p>
+<audio id="audio1" src="audio1.wav"></audio>
+</div>
+
+<div class="page">
+<h2>A New Dawn</h2>
+<img src="aisling_dawn.jpg" alt="Image of Aislings leading people towards a sunrise">
+<p id="paragraph2">
+<span class="play-icon">&#9658;</span> The Aislings' arrival marked a turning point in Temuair's history. Their wisdom and guidance brought order to the chaos, their light dispelling the lingering shadows of the Dubhaimid's reign. They established a new system of governance, one based on compassion, understanding, and the pursuit of knowledge. Under their leadership, Temuair began to heal, its people finding solace and hope in the Aislings' unwavering belief in a brighter future.
+</p>
+<audio id="audio2" src="audio2.wav"></audio>
+</div>
+
+<div class="page">
+<h2>The Age of Enlightenment</h2>
+<img src="aisling_enlightenment.jpg" alt="Image of Aislings teaching and guiding people">
+<p id="paragraph3">
+<span class="play-icon">&#9658;</span> The Aislings' influence extended beyond politics and governance. They fostered a culture of learning and enlightenment, encouraging the pursuit of knowledge and the arts. They established schools and libraries, their teachings inspiring a new generation of scholars, artists, and innovators. Under their guidance, Temuair entered a golden age of prosperity and progress, its people thriving in an environment of peace, harmony, and intellectual curiosity.
+</p>
+<audio id="audio3" src="audio3.wav"></audio>
+</div>
+
+<div class="page">
+<h2>A Legacy of Hope</h2>
+<img src="aisling_legacy.jpg" alt="Image of a statue of an Aisling, symbolizing their enduring legacy">
+<p id="paragraph4">
+<span class="play-icon">&#9658;</span> The Aislings' reign was not without its challenges, but their unwavering belief in the power of hope and the resilience of the human spirit saw them through. Their legacy endured long after their time, their teachings and ideals continuing to inspire generations to come. The Aislings' story is a testament to the enduring power of hope, a reminder that even in the darkest of times, the light can always find a way to shine through.
+</p>
+<audio id="audio4" src="audio4.wav"></audio>
+</div>
+</div>
+<div class="footnotes">
+<p>Made with the assistance of works by the following Aislings:</p>
+<p>
+
+</p>
+<p>
+</p>
+<p>
+</p>
+</div>
+</body>
+  <script>
+const playIcons = document.querySelectorAll('.play-icon');
+
+playIcons.forEach((icon, index) => {
+  icon.addEventListener('click', () => {
+    const audioId = `audio${index + 1}`;
+    const audio = document.getElementById(audioId);
+
+    if (audio.paused) {
+      audio.play();
+      icon.innerHTML = '&#9209;'; // Square for stop
+    } else {
+      audio.pause();
+      audio.currentTime = 0; // Reset to the beginning
+      icon.innerHTML = '&#9658;'; // Triangle for play
+    }
+  });
+});
+  </script>
+
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Dubhaimid: Horrors Born of Darkness</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+<style>
+      body {
+        font-family: 'Georgia', serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #F2E6D9;
+      }
+
+      body::before {
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);
+        background-image: url("parchment-texture.jpg");
+        background-repeat: repeat;
+        filter: blur(2px);
+        z-index: -1;
+      }
+
+      /* Title and Author Styling */
+      .title-section {
+        text-align: center;
+        margin-bottom: 40px;
+        /* Add space below the title section */
+      }
+
+      /* Footnote styling */
+      .footnotes {
+        font-size: 0.8em;
+        margin-top: 30px;
+        text-align: center;
+        /* Center the footnotes */
+      }
+
+      .footnotes p {
+        background: none;
+        /* Remove background from footnotes */
+        padding: 0;
+        margin-bottom: 5px;
+      }
+
+      .footnotes sup {
+        /* Style for superscript numbers */
+        vertical-align: super;
+        font-size: 0.7em;
+      }
+
+      h1 {
+        font-family: 'Cinzel Decorative', serif;
+        font-size: 3.5em;
+        /* Slightly larger title */
+        color: #5D2902;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        margin-bottom: 10px;
+        /* Reduce space between title and author */
+      }
+
+      .author {
+        font-family: 'Cinzel Decorative', serif;
+        font-size: 1.5em;
+        color: #8B4513;
+      }
+
+      h2 {
+        font-family: 'Cinzel Decorative', serif;
+        font-size: 2em;
+        color: #331A00;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        border-bottom: 2px solid #B8860B;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+      }
+
+      /* Style for text boxes */
+      .page p {
+        background-color: rgba(255, 255, 255, 0.7);
+        /* Semi-transparent white */
+        padding: 20px;
+        border-radius: 10px;
+        /* Rounded corners */
+        margin-bottom: 15px;
+        /* Add spacing between paragraphs */
+        position: relative;
+        /* To position the icon relative to the paragraph */
+      }
+
+      .play-icon {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 1.2em;
+        /* Adjust size as needed */
+        cursor: pointer;
+        /* Indicate it's clickable */
+      }
+
+      .play-icon:hover {
+        color: #B8860B;
+        /* Change color on hover (optional) */
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        position: relative;
+      }
+
+      img::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("film-grain.png");
+        opacity: 0.2;
+        mix-blend-mode: overlay;
+      }
+
+</style>
+</head>
+<body>
+<div class="title-section">
+<h1>The Dubhaimid: Horrors Born of Darkness</h1>
+<p class="author">By Zhong Fou</p>
+</div>
+
+<div class="flipbook">
+<div class="page">
+<h2>The Emergence of Evil</h2>
+<img src="dubhaimid_horror.jpg" alt="Image of a grotesque Dubhaimid creature">
+<p id="paragraph1">
+<span class="play-icon">&#9658;</span> In the chaotic Seventh Aeon of Temuair, amidst the Elemental Wars and the misuse of magic, a new and terrifying force emerged: the Dubhaimid. Born from the newly discovered Fifth Element of Darkness, these creatures were grotesque manifestations of evil, their forms twisted and distorted by the hatred and fear they fed upon. They were not mere beasts, but intelligent beings with a sinister understanding of life and death, capable of manipulating the very fabric of reality.
+</p>
+<audio id="audio1" src="audio1.mp3"></audio>
+</div>
+
+<div class="page">
+<h2>The Underworld's Tormentors</h2>
+<img src="dubhaimid_underworld.jpg" alt="Image of the Dubhaimid's underworld">
+<p id="paragraph2">
+<span class="play-icon">&#9658;</span> The Dubhaimid established their dominion in the underworld, a realm of eternal torment where they reveled in the suffering of trapped souls. Their power grew with each tormented spirit, their influence seeping into the mortal world and spreading darkness across the land. The cries of the damned echoed through the world, driving mortals to despair and madness.
+</p>
+<audio id="audio2" src="audio2.mp3"></audio>
+</div>
+
+<div class="page">
+<h2>Chadul: The Dark Lord</h2>
+<img src="chadul_darkness.jpg" alt="Image of Chadul, the lord of the Dubhaimid">
+<p id="paragraph3">
+<span class="play-icon">&#9658;</span> From the depths of the underworld, Chadul, the lord of the Dubhaimid, emerged. A being of pure darkness, he embodied the collective evil of the world, his power fueled by the suffering of countless souls. Chadul's reign marked the darkest period in Temuair's history, a time when despair and fear reigned supreme.
+</p>
+<audio id="audio3" src="audio3.mp3"></audio>
+</div>
+
+<div class="page">
+<h2>The War Against Light</h2>
+<img src="danaan_light.jpg" alt="Image of Danaan, goddess of light, battling the Dubhaimid">
+<p id="paragraph4">
+<span class="play-icon">&#9658;</span> Danaan, the goddess of light, rallied the forces of good against Chadul and his minions. A long and brutal war ensued, leaving Temuair scarred and broken. Though Chadul was eventually defeated, the Dubhaimid's influence lingered, their dark legacy continuing to haunt the land.
+</p>
+<audio id="audio4" src="audio4.mp3"></audio>
+</div>
+</div>
+   <div class="footnotes">
+	<p>Made with the assistance of works by the following Aislings:</p>
+    <p>
+
+    </p>
+    <p>
+    </p>
+	<p>
+    </p>
+    </div>
+	</body>
+  <script>
+const playIcons = document.querySelectorAll('.play-icon');
+
+playIcons.forEach((icon, index) => {
+  icon.addEventListener('click', () => {
+    const audioId = `audio${index + 1}`;
+    const audio = document.getElementById(audioId);
+
+    if (audio.paused) {
+      audio.play();
+      icon.innerHTML = '&#9209;'; // Square for stop
+    } else {
+      audio.pause();
+      audio.currentTime = 0; // Reset to the beginning
+      icon.innerHTML = '&#9658;'; // Triangle for play
+    }
+  });
+});
+  </script>
+
+</html>

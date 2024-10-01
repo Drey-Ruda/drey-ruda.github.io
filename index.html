@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Index of Webpages</title> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link   
+ href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">   
+
+  <style>
+body {
+font-family: 'Georgia', serif;
+line-height: 1.6;
+max-width: 800px;
+margin: 0 auto;
+background-color: #F2E6D9;
+}
+
+  body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background-image: url("parchment-texture.jpg");
+    background-repeat: repeat;
+    filter: blur(2px);
+    z-index: -1;
+  }
+
+  /* Title and Author Styling */
+  .title-section {
+    text-align: center;
+    margin-bottom: 40px;
+    /* Add space below the title section */
+  }
+
+  /* Footnote styling */
+  .footnotes {
+    font-size: 0.8em;
+    margin-top: 30px;
+    text-align: center;
+    /* Center the footnotes */
+  }
+
+  .footnotes p {
+    background: none;
+    /* Remove background from footnotes */
+    padding: 0;
+    margin-bottom: 5px;
+  }
+
+  .footnotes sup {
+    /* Style for superscript numbers */
+    vertical-align: super;
+    font-size: 0.7em;
+  }
+
+  h1 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 3.5em;
+    /* Slightly larger title */
+    color: #5D2902;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px;
+    /* Reduce space between title and author */
+  }
+
+  .author {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.5em;
+    color: #8B4513;
+  }
+
+  h2 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2em;
+    color: #331A00;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #B8860B;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+
+  /* Style for text boxes */
+  .page p {
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 10px;
+    /* Rounded corners */
+    margin-bottom: 15px;
+    /* Add spacing between paragraphs */
+    position: relative;
+    /* To position the icon relative to the paragraph */
+  }
+
+  .play-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.2em;
+    /* Adjust size as needed */
+    cursor: pointer;
+    /* Indicate it's clickable */
+  }
+
+  .play-icon:hover {
+    color: #B8860B;
+    /* Change color on hover (optional) */
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+  }
+
+  img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("film-grain.png");
+    opacity: 0.2;
+    mix-blend-mode: overlay;
+  }
+  </style>
+</head>
+<body>
+
+  <h1>List of Abridged Works</h1>
+
+  <div class="page">
+    <h3><a href="Aislings/Aislings.html">Aislings</a></h3>
+    <p id="paragraph1"><span class="play-icon">&#9658;</span> Brief description or excerpt from the Aislings page.</p>
+    <audio id="audio1" src="Aislings/aislings_audio.wav"></audio> 
+  </div>
+
+  <div class="page">
+    <h3><a href="Aosda/Aosda.html">Aosda</a></h3>
+    <p id="paragraph2"><span class="play-icon">&#9658;</span> Brief description or excerpt from the Aosda page.</p>
+    <audio id="audio2" src="Aosda/aosda_audio.wav"></audio> 
+  </div>
+
+  <div class="page">
+    <h3><a href="Dubhaimid/Dubhaimid.html">Dubhaimid</a></h3>
+    <p id="paragraph3"><span class="play-icon">&#9658;</span> Brief description or excerpt from the Dubhaimid page.</p>
+    <audio id="audio3" src="Dubhaimid/dubhaimid_audio.wav"></audio> 
+  </div>
+
+  <div class="page">
+    <h3><a href="Gods/Gods.html">Gods</a></h3>
+    <p id="paragraph4"><span class="play-icon">&#9658;</span> Brief description or excerpt from the Gods page.</p>
+    <audio id="audio4" src="Gods/gods_audio.wav"></audio> 
+  </div>
+
+  <div class="page">
+    <h3><a href="Loures/Loures.html">Loures</a></h3>
+    <p id="paragraph5"><span class="play-icon">&#9658;</span> Brief description or excerpt from the Loures page.</p>
+    <audio id="audio5" src="Loures/loures_audio.wav"></audio> 
+  </div>
+
+  <script>
+    const playIcons = document.querySelectorAll('.play-icon');
+
+    playIcons.forEach((icon, index) => {
+      icon.addEventListener('click', () => {
+        const audioId = `audio${index + 1}`;
+        const audio = document.getElementById(audioId);
+
+        if (audio.paused) {
+          audio.play();
+          icon.innerHTML = '&#9209;'; // Square for stop
+        } else {
+          audio.pause();
+          audio.currentTime = 0; 
+          icon.innerHTML = '&#9658;'; 
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
